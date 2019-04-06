@@ -1,11 +1,11 @@
 import React from 'react';
 import { render } from 'react-dom'; // eslint-disable-line import/no-extraneous-dependencies
 import Header from './Header';
-import styles from './styles.css';
-import Horizontal from './examples/Horizontal';
+import styles from '../css/styles.css';
+import Horizontal from './Horizontal';
 import { Provider } from "react-redux";
 import { createStore } from "redux";
-import reducer from './content';
+import reducer from '../reducer/content';
 
 function App() {
 	return (

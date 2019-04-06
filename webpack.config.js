@@ -5,7 +5,7 @@ const IgnoreEmitPlugin = require('ignore-emit-webpack-plugin');
 
 const sliderConfig = {
 	entry: {
-		index: './src/index.js',
+		index: './src/pages/index.js',
 		horizontal: './src/css/horizontal.css',
 		vertical: './src/css/vertical.css',
 	},
