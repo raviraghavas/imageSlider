@@ -1,4 +1,8 @@
-export default [
+import { combineReducers } from "redux";
+import Immutable from "immutable";
+
+const imageData = () => {
+	return Immutable.fromJS([
 	{
 		title: 'Vulputate Mollis Ultricies',
 		description:
@@ -52,5 +56,11 @@ export default [
 		image: 'https://i.imgur.com/DvmN8Hx.jpg',
 		user: 'Katerina',
 		userProfile: 'https://s7.postimg.cc/hsk2th5tn/6_3x.png',
-	},
-];
+	}
+])};
+
+export default combineReducers(
+	{
+		imageDataList: imageData
+	}
+);

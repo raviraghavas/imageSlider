@@ -37,7 +37,12 @@
   },
   "homepage": "https://github.com/erichbehrens/react-animated-slider#readme",
   "dependencies": {
-    "react": "^16.6.3"
+    "fs": "0.0.1-security",
+    "immutable": "^4.0.0-rc.12",
+    "prop-types": "^15.7.2",
+    "react": "^16.6.3",
+    "react-redux": "^6.0.1",
+    "redux": "^4.0.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.5",

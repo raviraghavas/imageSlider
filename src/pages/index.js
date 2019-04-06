@@ -3,6 +3,9 @@ import { render } from 'react-dom'; // eslint-disable-line import/no-extraneous-
 import Header from './Header';
 import styles from './styles.css';
 import Horizontal from './examples/Horizontal';
+import { Provider } from "react-redux";
+import { createStore } from "redux";
+import reducer from './content';
 
 function App() {
 	return (
@@ -29,4 +32,6 @@ function App() {
 	);
 }
 
-render(<App />, document.getElementById('app'));
+render(<Provider store={createStore(reducer)}>
+	<App />
+</Provider>, document.getElementById('app'));
