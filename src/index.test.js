@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactTestRenderer from 'react-test-renderer';
-import Slider from '.';
+import Slider from './util/Slider';
 
 jest.useFakeTimers();
 
