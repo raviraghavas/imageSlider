@@ -1,9 +1,7 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import Slider from '../util/Slider';
 import horizontalCss from '../css/horizontal.css';
-// import content from '../content';
-// import modules from '../../util/filemod'
 
 class Horizontal extends Component {
 
@@ -16,11 +14,11 @@ class Horizontal extends Component {
 				<Slider classNames={horizontalCss}>
 					{this.props.image.map((item, index) => (
 						<div key={index}>
-							<img src={item.get("image")} className="center" height="400px" display="block" />
-							<div className="center">
-								<h1>{item.get("title")}</h1>
+							<img src={item.get("image")} className="imageCheck" />
+							<div className="divCheck">
+								{/* <h1>{item.get("title")}</h1> */}
 								<p>{item.get("description")}</p>
-								<button>{item.get("button")}</button>
+								{/* <button>{item.get("button")}</button> */}
 							</div>
 						</div>
 					))}
