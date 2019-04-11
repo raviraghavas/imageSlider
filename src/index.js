@@ -5,6 +5,7 @@ import { render } from 'react-dom';
 import React from 'react';
 import App from './pages/App';
 
-render(<Provider store={createStore(reducer)}>
+render(//<Provider store={createStore(reducer)}>
 	<App />
-</Provider>, document.getElementById('app'));
+//</Provider>
+, document.getElementById('app'));
