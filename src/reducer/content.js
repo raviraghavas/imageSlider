@@ -36,15 +36,15 @@ import imageRetrieve from '../api/imageRetrieve';
 // 	}
 // }
 
-const imageData = async () => {
-	// console.log("Inside image data request");
-	const dataRetrieved = await imageRetrieve.post('/retrieveAllImages');
+// const imageData = async () => {
+// 	// console.log("Inside image data request");
+// 	const dataRetrieved = await imageRetrieve.post('/retrieveAllImages');
 
-	console.log("after retrieving data")
-	console.log(dataRetrieved);
-	// console.log(Immutable.fromJS(dataRetrieved.data));
-	return dataRetrieved.data;
-};
+// 	console.log("after retrieving data")
+// 	console.log(dataRetrieved);
+// 	// console.log(Immutable.fromJS(dataRetrieved.data));
+// 	return dataRetrieved.data;
+// };
 
-// console.log(imageData)
-export default imageData;
+// // console.log(imageData)
+// export default imageData;

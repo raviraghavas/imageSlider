@@ -17,7 +17,12 @@ class Horizontal extends Component {
 		this.renderMyData();
 	}
 
+	componentDidMount(){
+		setInterval(async () => {this.renderMyData()},60000);
+	}
+
 	renderMyData() {
+		console.log("Inside the renderMyData");
 		fetch('http://localhost:9000/retrieveAllImages')
 			.then((response) => response.json())
 			.then((responseJson) => {
