@@ -51,7 +51,7 @@ class Horizontal extends Component {
 							</div>
 						</div>
 					))}
-				</Slider> : "Testing"}
+				</Slider> : "No Images Available....."}
 			</div>
 
 
